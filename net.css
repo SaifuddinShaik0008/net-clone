@@ -1,28 +1,31 @@
-*{
-margin: 0%;
-box-sizing: border-box;
-padding: 0%;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-color: #000;
     color: #fff;
 }
-.back{
+
+.back {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,0.7)
+    background-color: rgba(0, 0, 0, 0.7);
 }
-main{
+
+main {
     width: 100%;
     height: 100vh;
-    background-image:  url(https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg);
-    margin: 0%;
-    background-color: rgba(0,0,0,0.7);
-    border-bottom:10px solid rgb(36, 34, 34);
+    background-image: url(https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg);
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 10px solid rgb(36, 34, 34);
 }
-header{
-   
+
+header {
     background-position: center;
     background-size: cover;
     padding: 10px;
@@ -30,22 +33,25 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
 }
-.en{
+
+.en {
     width: 150px;
     height: auto;
     margin-top: 25px;
-
 }
+
 .left {
     margin-left: 100px;
 }
-.com{
+
+.com {
     margin-right: 100px;
     margin-top: 30px;
 }
-.sel{
+
+.sel {
     background-color: #000;
     color: #fff;
     border: 1px solid #fff;
@@ -55,9 +61,9 @@ header{
     margin-right: 20px;
     border-radius: 3px;
     padding-left: 10px;
-
 }
-button{
+
+button {
     background-color: red;
     color: #fff;
     width: 70px;
@@ -68,34 +74,40 @@ button{
     font-weight: bold;
     font-size: 15px;
 }
-.sec{
+
+.sec {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.middle{
+
+.middle {
     text-align: center;
 }
-.middle h1{
+
+.middle h1 {
     font-size: 50px;
     font-weight: 600;
     margin-top: 50px;
 }
-.middle h3{
+
+.middle h3 {
     font-size: 30px;
     font-weight: 600;
     margin-top: 30px;
 }
-.middle p{
+
+.middle p {
     font-size: 20px;
     font-weight: 600;
     margin-top: 30px;
 }
-.form{
+
+.form {
     background-color: #363333;
     color: white;
     background: transparent;
-    width:400px;
+    width: 400px;
     height: 50px;
     margin-top: 30px;
     border-radius: 3px;
@@ -103,7 +115,8 @@ button{
     font-size: 20px;
     text-align: center;
 }
-.but{
+
+.but {
     background-color: red;
     color: #fff;
     width: 150px;
@@ -112,89 +125,40 @@ button{
     font-weight: 600;
     font-size: 20px;
 }
-.begi{
-    width: 50%;
+
+.begi, .next, .second, .four, .five {
+    width: 100%;
     margin-top: 200px;
-    margin-left: 100px;
     text-align: start;
-    float: left;
     box-sizing: border-box;
     margin: auto;
     padding: 50px 100px;
-    
-   
 }
 
-.next{
-   width: 100%;
-   background-color: #000;
-   height: 70vh;
+.next {
+    height: 70vh;
 }
-.next h1{
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 40px;
-}
-.next h3{
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 30px;
-}
-img{
+
+img {
     width: 400px;
     height: auto;
 }
-.second{
-    width: 50%;
-    margin-top: 200px;
-    margin-left: 100px;
-    text-align: start;
-    float: left;
-    box-sizing: border-box;
-    margin: auto;
-    padding: 50px 100px;
-}
-.four{
-    width: 50%;
-    margin-top: 200px;
-    margin-left: 100px;
-    text-align: start;
-    float: left;
-    box-sizing: border-box;
-    margin: auto;
-    padding: 50px 100px;
-}
-.five{
-    width: 50%;
-    margin-top: 200px;
-    margin-left: 100px;
-    text-align: start;
-    float: left;
-    box-sizing: border-box;
-    margin: auto;
-    padding: 50px 100px;
-}
-.six{
-   width: 100%;
-   height: 100vph;
 
-}
-.noth{
+.noth {
     text-align: center;
-
-
 }
-.noth p{
+
+.noth p {
     margin-top: 10px;
 }
 
-.noth h1{
+.noth h1 {
     font-size: 50px;
     font-weight: 600;
     margin-top: 40px;
 }
 
-.noth summary{
+.noth summary {
     width: 70%;
     height: 70px;
     margin-top: 10px;
@@ -204,4 +168,206 @@ img{
     padding: 30px;
 }
 
- 
+/* Responsive design */
+@media (max-width: 1200px) {
+    .left, .com {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .sel {
+        width: 100px;
+    }
+
+    .but {
+        width: 130px;
+    }
+
+    .begi, .second, .four, .five {
+        padding: 50px 70px;
+    }
+
+    .middle h1 {
+        font-size: 40px;
+    }
+
+    .middle h3 {
+        font-size: 25px;
+    }
+
+    .middle p {
+        font-size: 18px;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    .sec {
+        flex-direction: column;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .noth h1 {
+        font-size: 40px;
+    }
+
+    .noth summary {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+    }
+
+    .en {
+        margin-top: 20px;
+    }
+
+    .sel, .but {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .begi, .second, .four, .five {
+        width: 90%;
+        padding: 30px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .noth summary {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .middle h1 {
+        font-size: 35px;
+    }
+
+    .middle h3 {
+        font-size: 20px;
+    }
+
+    .middle p {
+        font-size: 15px;
+    }
+
+    .form {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sel, .but {
+        width: 100%;
+    }
+
+    .begi, .second, .four, .five {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .middle h1 {
+        font-size: 30px;
+    }
+
+    .middle h3 {
+        font-size: 20px;
+    }
+
+    .middle p {
+        font-size: 14px;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sec {
+        flex-direction: column;
+    }
+
+    img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .noth summary {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .noth h1 {
+        font-size: 30px;
+    }
+
+    .noth p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    .left, .com {
+        margin: 0;
+    }
+
+    .begi, .second, .four, .five {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .but {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .middle h1 {
+        font-size: 25px;
+    }
+
+    .middle h3 {
+        font-size: 18px;
+    }
+
+    .middle p {
+        font-size: 12px;
+    }
+
+    .noth h1 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .noth summary {
+        width: 100%;
+        margin-left: 0;
+    }
+}
